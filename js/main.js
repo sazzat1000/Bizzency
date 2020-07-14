@@ -21,11 +21,25 @@ $(document).ready(function () {
 
   // Service Slider
   $(".service-slider").slick({
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     speed: 800,
     slidesToShow: 3,
     slidesToScroll: 3,
-    draggable: false
+    draggable: false,
+    prevArrow: "<i class='fas fa-long-arrow-alt-left service-prev'></i>",
+    nextArrow: "<i class='fas fa-long-arrow-alt-right service-next'></i>"
+  })
+
+  // Testimonial Slider 
+  $(".testimonial-slider").slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 800,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    draggable: false,
+    // prevArrow: $(".testimonial-prev"),
+    // nextArrow: $(".testimonial-next")
   })
 });

@@ -84,9 +84,9 @@ i {
 .slick-slide:focus {
   outline: none;
 }
-/* .slick-slide img {
+.slick-slide img {
   display: inline-block;
-} */
+}
 /* ================ Common CSS Start ================ */
 
 /* ================ Header Start ================ */
@@ -328,42 +328,60 @@ nav .icons {
 #service {
   padding: 80px 0;
   background: #f5f5f5;
-  position: relative;
 }
-
 #service .row {
   justify-content: space-between;
-  background: gold;
   z-index: 9999;
-}
-/* #service .service-slider {
   position: relative;
 }
-#service .arrow i {
+.service-prev,
+.service-next {
   position: absolute;
   top: 50%;
-  right: 0;
-} */
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  color: #222222;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #222222;
+  cursor: pointer;
+  z-index: -1;
+}
+.service-prev {
+  left: -35px;
+}
+.service-next {
+  right: -35px;
+}
+.service-prev:hover,
+.service-next:hover {
+  background: #222222;
+  color: #fff;
+}
 #service .service-item {
   width: 32%;
 }
 .service-item {
-  display: flex;
-  align-items: center;
   border-radius: 5px;
   padding: 25px 30px;
   position: relative;
-  /* background: #eeeeee; */
-  background: red;
+  background: #eeeeee;
 }
 /* .service-item .service-text {
   padding-left: 25px;
 } */
 .service-item .service-icon {
   width: 30%;
+  float: left;
+  padding-top: 40px;
 }
 .service-item .service-text {
-  width: 65%;
+  width: 70%;
+  float: left;
 }
 .service-text h3 {
   font-size: 20px;
@@ -389,9 +407,9 @@ nav .icons {
   transform-origin: left;
   border-radius: 5px;
 }
-/* .service-item:hover .service-item-overlay {
+.service-item:hover .service-item-overlay {
   transform: scale(1);
-} */
+}
 .service-item-overlay-content {
   position: absolute;
   top: 50%;
@@ -417,8 +435,9 @@ nav .icons {
   color: #222;
   border-radius: 50%;
   position: absolute;
-  left: 30%;
-  bottom: -63px;
+  left: 50%;
+  bottom: -55px;
+  transform: translateX(-50%);
 }
 .service-item-overlay-content a:hover {
   background: #ffc712;
@@ -435,11 +454,18 @@ nav .icons {
 .portfolio-item {
   position: relative;
   text-align: center;
+  transition: .5s;
+  overflow: hidden;
+}
+.portfolio-item .portfolio-image {
+  width: 350px;
+  height: 420px;
 }
 .portfolio-item .portfolio-image img {
   width: 100%;
   height: 100%;
   display: block;
+  border-radius: 10px;
 }
 .portfolio-item .portfolio-text {
   position: absolute;
@@ -501,6 +527,25 @@ nav .icons {
   justify-content: space-between;
   position: relative;
 }
+#testimonial .testimonial-slider {
+  position: relative;
+}
+
+#testimonial .testimonial-arrow .testimonial-prev,
+#testimonial .testimonial-arrow .testimonial-next {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#testimonial .testimonial-arrow i {
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+}
 #testimonial .testimonial-item {
   display: flex;
   width: 48%;
@@ -528,30 +573,7 @@ nav .icons {
   font-size: 16px;
   text-transform: capitalize;
 }
-.testimonial-prev {
-  position: absolute;
-  top: 40%;
-  left: -30px;
-}
-.testimonial-next {
-  position: absolute;
-  top: 40%;
-  right: -30px;
-}
-.testimonial-icon i {
-  font-size: 24px;
-  text-align: center;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  background: #fff;
-  color: #0f2f44;
-}
-.testimonial-icon i:hover {
-  background: #ffc712;
-  cursor: pointer;
-}
+
 /* ================ Testimonial End ================ */
 
 /* ================ Blog Start ================ */
