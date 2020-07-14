@@ -81,6 +81,12 @@ i {
   line-height: 1;
   margin-bottom: 45px;
 }
+.slick-slide:focus {
+  outline: none;
+}
+/* .slick-slide img {
+  display: inline-block;
+} */
 /* ================ Common CSS Start ================ */
 
 /* ================ Header Start ================ */
@@ -322,10 +328,22 @@ nav .icons {
 #service {
   padding: 80px 0;
   background: #f5f5f5;
+  position: relative;
 }
+
 #service .row {
   justify-content: space-between;
+  background: gold;
+  z-index: 9999;
 }
+/* #service .service-slider {
+  position: relative;
+}
+#service .arrow i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+} */
 #service .service-item {
   width: 32%;
 }
@@ -335,10 +353,17 @@ nav .icons {
   border-radius: 5px;
   padding: 25px 30px;
   position: relative;
-  background: #eeeeee;
+  /* background: #eeeeee; */
+  background: red;
+}
+/* .service-item .service-text {
+  padding-left: 25px;
+} */
+.service-item .service-icon {
+  width: 30%;
 }
 .service-item .service-text {
-  padding-left: 25px;
+  width: 65%;
 }
 .service-text h3 {
   font-size: 20px;
@@ -364,9 +389,9 @@ nav .icons {
   transform-origin: left;
   border-radius: 5px;
 }
-.service-item:hover .service-item-overlay {
+/* .service-item:hover .service-item-overlay {
   transform: scale(1);
-}
+} */
 .service-item-overlay-content {
   position: absolute;
   top: 50%;
