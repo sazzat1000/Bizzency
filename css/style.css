@@ -15,7 +15,7 @@ body {
   height: 100vh;
   position: fixed;
   background: black;
-  z-index: 99999;
+  z-index: 99999999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
