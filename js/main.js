@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Sticky Nav
-  
+
   var menu_top_offset = $("nav").offset().top;
 
   $(window).on("scroll", function () {
@@ -28,10 +28,10 @@ $(document).ready(function () {
     slidesToScroll: 3,
     draggable: false,
     prevArrow: "<i class='fas fa-long-arrow-alt-left service-prev'></i>",
-    nextArrow: "<i class='fas fa-long-arrow-alt-right service-next'></i>"
+    nextArrow: "<i class='fas fa-long-arrow-alt-right service-next'></i>",
   });
 
-  // Portfolio Slider 
+  // Portfolio Slider
   $(".portfolio-slider").slick({
     speed: 800,
     slidesToShow: 3,
@@ -40,8 +40,8 @@ $(document).ready(function () {
     prevArrow: "<i class='fas fa-angle-left portfolio-prev'></i>",
     nextArrow: "<i class='fas fa-angle-right portfolio-next'></i>",
   });
-  
-  // Testimonial Slider 
+
+  // Testimonial Slider
   $(".testimonial-slider").slick({
     autoplay: true,
     autoplaySpeed: 3000,
@@ -53,14 +53,31 @@ $(document).ready(function () {
     nextArrow: "<i class='fas fa-angle-right testimonial-next'></i>",
   });
 
-  // Blog Slider 
+  // Blog Slider
   $(".blog-slider").slick({
     speed: 800,
     slidesToShow: 3,
     slidesToScroll: 3,
     draggable: false,
-    centerPadding: '0',
+    centerPadding: "0",
     prevArrow: "<i class='fas fa-angle-left blog-prev'></i>",
     nextArrow: "<i class='fas fa-angle-right blog-next'></i>",
+  });
+  // Progress Bar
+  $(".ps-bar").LineProgressbar({
+    percentage: 90,
+    fillBackgroundColor:'#2a4896'
+  });
+  $(".ai-bar").LineProgressbar({
+    percentage: 85,
+    fillBackgroundColor:'#5d3b15'
+  });
+  $(".dw-bar").LineProgressbar({
+    percentage: 75,
+    fillBackgroundColor:'#344a1f'
+  });
+  $(".ae-bar").LineProgressbar({
+    percentage: 80,
+    fillBackgroundColor:'#392960'
   });
 });
