@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+  // Preloader Start
+  $(window).on("load", function () {
+    $("#preloader").fadeOut(1000);
+  });
+
   // Sticky Nav
 
   var menu_top_offset = $("nav").offset().top;
@@ -79,5 +85,23 @@ $(document).ready(function () {
   $(".ae-bar").LineProgressbar({
     percentage: 80,
     fillBackgroundColor:'#392960'
+  });
+
+  // Animated Headline
+  $('.animated-text-container').animatedHeadline({
+    animationType: "clip",
+    animationDelay: 2500,
+    barAnimationDelay: 3800,
+    barWaiting: 800,
+    lettersDelay: 50,
+    typeLettersDelay: 150,
+    selectionDuration: 500,
+    typeAnimationDelay: 1300,
+    revealDuration: 600,
+    revealAnimationDelay: 1500
+  });
+   // Smooth Scroll
+   var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000
   });
 });

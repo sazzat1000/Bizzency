@@ -8,6 +8,72 @@ body {
   font-family: "Open Sans", "Abril Fatface", sans-serif;
 }
 
+/* ================ Prelaoder Start ================ */
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: black;
+  z-index: 99999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#preloader .loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#preloader .loader::before,
+#preloader .loader::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  -webkit-animation: animate 1s linear infinite;
+          animation: animate 1s linear infinite;
+}
+
+#preloader .loader::before {
+  border-left: 10px solid #ffc712;
+  border-radius: 25px 25px 0 0;
+  top: 0;
+  left: 0;
+}
+
+#preloader .loader::after {
+  border-right: 10px solid #ffc712;
+  border-radius: 0 0 50px 50px;
+  bottom: 0;
+  left: 0;
+}
+
+@-webkit-keyframes animate {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes animate {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+/* ================ Prelaoder End ================ */
+
+
 /* ================ Common CSS Start ================ */
 .container {
   width: 1180px;
@@ -187,6 +253,11 @@ nav .icons {
   color: #8484bf;
   letter-spacing: 15px;
   text-transform: capitalize;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+.ah-headline.clip .ah-words-wrapper::after {
+  background-color: #8484bf;
 }
 .banner-content p {
   font-size: 14px;

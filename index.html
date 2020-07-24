@@ -10,10 +10,17 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/progressbar.css">
+    <link rel="stylesheet" href="css/animated-headline.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <!-- ================ Preloader Start ================ -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- ================ Preloader End ================ -->
 
     <!-- ================ Header Start ================ -->
     <header>
@@ -40,10 +47,10 @@
                     <div class="menu">
                         <ul>
                             <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Our services</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#service">Our services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#blog">Blog</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
@@ -63,7 +70,15 @@
             <div class="banner-content">
                 <span class="top-heading">Your</span>
                 <h1>Success</h1>
-                <span class="bottom-heading">Our ambition</span>
+                <div class="animated-text-container">
+                    <h2 class="ah-headline bottom-heading">
+                        <span class="ah-words-wrapper">
+                          <b class="is-visible">Our Ambition</b>
+                          <b>Our Mission</b>
+                          <b>Our vission</b>
+                        </span>
+                      </h2>
+                </div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
@@ -683,7 +698,9 @@
     <!-- ================ Script Files ================ -->
     <script src="js/jquery.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/smooth.js"></script>
     <script src="js/progressbar.js"></script>
+    <script src="js/animated-headline.js"></script>
     <script src="js/main.js"></script>
 
 </body>
