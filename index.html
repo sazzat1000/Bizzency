@@ -9,8 +9,10 @@
     <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/progressbar.css">
+    <link rel="stylesheet" href="css/jquery.rprogessbar.min.css">
     <link rel="stylesheet" href="css/animated-headline.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/venobox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -84,7 +86,7 @@
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
                 <a href="#" class="btn btn-color">Explore more</a>
-                <a href="#"><i class="fas fa-play"></i></a>
+                <a class="intro-video" data-autoplay="true" data-vbtype="video" href="https://youtu.be/AT6oSIDbGkw"><i class="fas fa-play"></i></a>
             </div>
         </div>
     </section>
@@ -116,7 +118,7 @@
                         <a href="#" class="btn btn-white">Read later</a>
                     </div>
                 </div>
-                <div class="about-image">
+                <div class="about-image wow fadeInRight">
                     <img src="img/about/about.png" alt="">
                 </div>
             </div>
@@ -128,7 +130,7 @@
     <section id="skill">
         <div class="container">
             <div class="row skill-container">
-                <div class="skill-image">
+                <div class="skill-image wow fadeInLeft">
                     <img src="img/skill/skill.png" alt="">
                 </div>
                 <div class="skill-content">
@@ -144,8 +146,8 @@
                         <div class="single-bar">
                             <div class="progress-bar" data-OPTION="value">
                                 <div class="progress-bar-text">
-                                    <p>Photoshop</p>
                                     <p>90%</p>
+                                    <p>Photoshop</p>
                                 </div>
                                 <div class="ps-bar"></div>
                             </div>
@@ -156,8 +158,8 @@
                         <div class="single-bar">
                             <div class="progress-bar" data-OPTION="value">
                                 <div class="progress-bar-text">
-                                    <p>Illustrator</p>
                                     <p>85%</p>
+                                    <p>Illustrator</p>
                                 </div>
                                 <div class="ai-bar"></div>
                             </div>
@@ -168,8 +170,8 @@
                         <div class="single-bar">
                             <div class="progress-bar" data-OPTION="value">
                                 <div class="progress-bar-text">
-                                    <p>Dreamwaver</p>
                                     <p>75%</p>
+                                    <p>Dreamwaver</p>
                                 </div>
                                 <div class="dw-bar"></div>
                             </div>
@@ -180,9 +182,8 @@
                         <div class="single-bar">
                             <div class="progress-bar" data-OPTION="value">
                                 <div class="progress-bar-text">
-                                    <p>After effects</p>
                                     <p>80%</p>
-                                </div>
+                                    <p>After effects</p>                                </div>
                                 <div class="ae-bar"></div>
                             </div>
                             <div class="progress-image">
@@ -204,7 +205,7 @@
                 <h2>Our services</h2>
             </div>
             <div class="row service-slider">
-                <div class="service-item">
+                <div class="service-item wow fadeInLeft">
                     <div class="service-icon">
                         <img src="img/service/service-1.png" alt="">
                     </div>
@@ -225,7 +226,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-item">
+                <div class="service-item wow fadeInUp">
                     <div class="service-icon">
                         <img src="img/service/service-2.png" alt="">
                     </div>
@@ -246,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-item">
+                <div class="service-item wow fadeInRight">
                     <div class="service-icon">
                         <img src="img/service/service-3.png" alt="">
                     </div>
@@ -406,9 +407,11 @@
                 <h2>Our portfolio</h2>
             </div>
             <div class="row portfolio-slider">
-                <div class="portfolio-item">
+                <div class="portfolio-item wow fadeInLeft">
                     <div class="portfolio-image">
-                        <img src="img/portfolio/1.jpg" alt="">
+                        <a href="img/portfolio/1.jpg" class="venobox" data-gall="portfolio">
+                            <img src="img/portfolio/1.jpg" alt="">
+                        </a>
                     </div>
                     <div class="portfolio-text">
                         <p>Girl illustration</p>
@@ -416,7 +419,19 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="img/portfolio/2.jpg" alt="">
+                        <a href="img/portfolio/2.jpg" class="venobox" data-gall="portfolio">
+                            <img src="img/portfolio/2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="portfolio-text">
+                        <p>Girl illustration</p>
+                    </div>
+                </div>
+                <div class="portfolio-item wow fadeInRight">
+                    <div class="portfolio-image">
+                        <a href="img/portfolio/3.jpg" class="venobox" data-gall="portfolio">
+                            <img src="img/portfolio/3.jpg" alt="">
+                        </a>
                     </div>
                     <div class="portfolio-text">
                         <p>Girl illustration</p>
@@ -424,7 +439,9 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="img/portfolio/3.jpg" alt="">
+                        <a href="img/portfolio/4.jpg" class="venobox" data-gall="portfolio">
+                            <img src="img/portfolio/4.jpg" alt="">
+                        </a>
                     </div>
                     <div class="portfolio-text">
                         <p>Girl illustration</p>
@@ -432,7 +449,9 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="img/portfolio/4.jpg" alt="">
+                        <a href="img/portfolio/5.jpg" class="venobox" data-gall="portfolio">
+                            <img src="img/portfolio/5.jpg" alt="">
+                        </a>
                     </div>
                     <div class="portfolio-text">
                         <p>Girl illustration</p>
@@ -440,15 +459,9 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="img/portfolio/5.jpg" alt="">
-                    </div>
-                    <div class="portfolio-text">
-                        <p>Girl illustration</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="img/portfolio/6.jpg" alt="">
+                        <a href="img/portfolio/6.jpg" class="venobox" data-gall="portfolio">
+                            <img src="img/portfolio/6.jpg" alt="">
+                        </a>
                     </div>
                     <div class="portfolio-text">
                         <p>Girl illustration</p>
@@ -535,7 +548,7 @@
                 <h2>Our Latest Blogs</h2>
             </div>
             <div class="row blog-slider">
-                <div class="blog-item">
+                <div class="blog-item wow fadeInLeft">
                     <img src="img/blog/1.jpg" alt="">
                     <div class="blog-text">
                         <span class="date">26 October 2018</span>
@@ -551,7 +564,7 @@
                         <a href="#">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 </div>
-                <div class="blog-item">
+                <div class="blog-item wow fadeInRight">
                     <img src="img/blog/3.jpg" alt="">
                     <div class="blog-text">
                         <span class="date">26 October 2018</span>
@@ -597,7 +610,7 @@
             <div class="footer-icon">
                 <i class="fas fa-angle-up"></i>
             </div>
-            <div class="row top-footer">
+            <div class="row top-footer wow fadeInUp">
                 <div class="footer-item footer-logo">
                     <img src="img/logo/logo.png" alt="">
                     <p>
@@ -697,10 +710,13 @@
 
     <!-- ================ Script Files ================ -->
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/smooth.js"></script>
-    <script src="js/progressbar.js"></script>
+    <script src="js/jQuery.rProgressbar.min.js"></script>
     <script src="js/animated-headline.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/venobox.js"></script>
     <script src="js/main.js"></script>
 
 </body>

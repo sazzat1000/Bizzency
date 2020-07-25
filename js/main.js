@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   // Preloader Start
   $(window).on("load", function () {
     $("#preloader").fadeOut(1000);
@@ -70,25 +69,26 @@ $(document).ready(function () {
     nextArrow: "<i class='fas fa-angle-right blog-next'></i>",
   });
   // Progress Bar
-  $(".ps-bar").LineProgressbar({
+  $(".ps-bar").rProgressbar({
     percentage: 90,
-    fillBackgroundColor:'#2a4896'
+    fillBackgroundColor: "#2A4896",
   });
-  $(".ai-bar").LineProgressbar({
+  $(".ai-bar").rProgressbar({
     percentage: 85,
-    fillBackgroundColor:'#5d3b15'
+    fillBackgroundColor: "#392960",
   });
-  $(".dw-bar").LineProgressbar({
+  $(".dw-bar").rProgressbar({
     percentage: 75,
-    fillBackgroundColor:'#344a1f'
+    fillBackgroundColor: "#344A1F",
   });
-  $(".ae-bar").LineProgressbar({
+
+  $(".ae-bar").rProgressbar({
     percentage: 80,
-    fillBackgroundColor:'#392960'
+    fillBackgroundColor: "#2A4896",
   });
 
   // Animated Headline
-  $('.animated-text-container').animatedHeadline({
+  $(".animated-text-container").animatedHeadline({
     animationType: "clip",
     animationDelay: 2500,
     barAnimationDelay: 3800,
@@ -98,10 +98,17 @@ $(document).ready(function () {
     selectionDuration: 500,
     typeAnimationDelay: 1300,
     revealDuration: 600,
-    revealAnimationDelay: 1500
+    revealAnimationDelay: 1500,
   });
-   // Smooth Scroll
-   var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1000
+  // Smooth Scroll
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+  });
+  new WOW().init();
+  $(".intro-video").venobox();
+  $(".venobox").venobox({
+    framewidth: "350px",
+    frameheight: "420px",
+    closeColor: "#ffc712"
   });
 });

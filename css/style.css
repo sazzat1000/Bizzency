@@ -20,11 +20,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #preloader .loader {
@@ -41,7 +41,7 @@ body {
   width: 80px;
   height: 50px;
   -webkit-animation: animate 1s linear infinite;
-          animation: animate 1s linear infinite;
+  animation: animate 1s linear infinite;
 }
 
 #preloader .loader::before {
@@ -61,18 +61,17 @@ body {
 @-webkit-keyframes animate {
   100% {
     -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 
 @keyframes animate {
   100% {
     -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 /* ================ Prelaoder End ================ */
-
 
 /* ================ Common CSS Start ================ */
 .container {
@@ -152,6 +151,18 @@ i {
 }
 .slick-slide img {
   display: inline-block;
+}
+.vbox-prev span,
+.vbox-next span {
+  border-top-color: #ffc712 !important;
+  border-right-color: #ffc712 !important;
+  border: 3px solid transparent;
+  width: 30px;
+  height: 30px;
+}
+.slick-slide,
+.slick-slide:focus {
+  outline: none !important;
 }
 /* ================ Common CSS Start ================ */
 
@@ -367,6 +378,16 @@ nav .icons {
   border-radius: 50%;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
+.progressbar {
+  border-radius: 5px !important;
+}
+.progressbar .proggress {
+  margin-left: auto !important;
+  border-radius: 5px !important;
+}
+.percentCount {
+  display: none;
+}
 /* ================ Skill End ================ */
 
 /* ================ Service Start ================ */
@@ -512,7 +533,7 @@ nav .icons {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 .portfolio-prev {
@@ -529,7 +550,7 @@ nav .icons {
 .portfolio-item {
   position: relative;
   text-align: center;
-  transition: .5s;
+  transition: 0.5s;
   overflow: hidden;
 }
 .portfolio-item .portfolio-image {
@@ -602,7 +623,7 @@ nav .icons {
   text-align: center;
   z-index: 9999;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
 .testimonial-prev {
   left: -30px;
@@ -717,7 +738,7 @@ nav .icons {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  transition: .5s;
+  transition: 0.5s;
 }
 .blog-prev {
   left: 31.7%;
