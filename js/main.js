@@ -5,7 +5,6 @@ $(document).ready(function () {
   });
 
   // Sticky Nav
-
   var menu_top_offset = $("nav").offset().top;
 
   $(window).on("scroll", function () {
@@ -19,9 +18,8 @@ $(document).ready(function () {
   });
 
   // Back to Top Button
-
   $(".footer-icon").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 1000);
+    $("html, body").animate({ scrollTop: 0 }, 1500);
   });
 
   // Service Slider
@@ -104,11 +102,13 @@ $(document).ready(function () {
   var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
   });
+  // Wow JS
   new WOW().init();
+  // Venobox JS
   $(".intro-video").venobox();
   $(".venobox").venobox({
     framewidth: "350px",
     frameheight: "420px",
-    closeColor: "#ffc712"
+    closeColor: "#ffc712",
   });
 });

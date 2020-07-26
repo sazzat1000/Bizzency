@@ -160,11 +160,14 @@ i {
   width: 30px;
   height: 30px;
 }
-.slick-slide,
-.slick-slide:focus {
-  outline: none !important;
+.venobox {
+  outline: none;
 }
-/* ================ Common CSS Start ================ */
+.vbox-close {
+  right: 20px;
+  font-size: 40px;
+}
+/* ================ Common CSS End ================ */
 
 /* ================ Header Start ================ */
 header .top-header {
@@ -380,6 +383,9 @@ nav .icons {
 }
 .progressbar {
   border-radius: 5px !important;
+}
+.progressbar {
+  background: #DDDDDD !important;
 }
 .progressbar .proggress {
   margin-left: auto !important;
